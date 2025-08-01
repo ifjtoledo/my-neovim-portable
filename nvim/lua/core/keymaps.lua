@@ -1,15 +1,18 @@
 -- nvim/lua/core/keymaps.lua
 
-local map = vim.keymap.set
+local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
--- Explorador de archivos con :Ex
-map('n', '<leader>e', ':Ex<CR>', opts)
+-- Líder
+vim.g.mapleader = " "
 
--- Guardar con Ctrl+S
-map('n', '<C-s>', ':w<CR>', opts)
-map('i', '<C-s>', '<Esc>:w<CR>i', opts)
+-- Explorador de archivos
+keymap("n", "<leader>e", ":Ex<CR>", opts)
 
--- Salir con Ctrl+Q
-map('n', '<C-q>', ':q<CR>', opts)
-map('i', '<C-q>', '<Esc>:q<CR>', opts)
+-- Guardar con Ctrl+s
+keymap("n", "<C-s>", ":w<CR>", opts)
+keymap("i", "<C-s>", "<Esc>:w<CR>i", opts)
+
+-- Salir con Ctrl+q
+keymap("n", "<C-q>", ":q<CR>", opts)
+keymap("i", "<C-q>", "<Esc>:q<CR>", opts)

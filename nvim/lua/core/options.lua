@@ -2,7 +2,7 @@
 
 local opt = vim.opt
 
--- Numeración de líneas
+-- Numeración
 opt.number = true
 opt.relativenumber = true
 
@@ -11,18 +11,18 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 
--- Colores y sintaxis
-opt.syntax = 'on'
-opt.background = 'dark'
+-- Sintaxis y color
+vim.cmd("syntax on")
+opt.background = "dark"
 
 -- Indentación
 opt.smartindent = true
 opt.autoindent = true
 
--- Mouse
-opt.mouse = 'a'
+-- Activar mouse
+opt.mouse = "a"
 
--- Búsqueda inteligente
+-- Búsqueda
 opt.ignorecase = true
 opt.smartcase = true
 opt.incsearch = true
