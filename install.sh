@@ -8,7 +8,7 @@ set -e
 
 SOURCE_DIR="$(pwd)/nvim"
 TARGET_DIR="$HOME/.config/nvim"
-BACKUP_DIR="$HOME/.config/nvim-backup-$(date +%Y%m%d-%H%M%S)"
+BACKUP_DIR="$HOME/.config/nvim-backup"
 WSL_DETECTED=$(grep -i microsoft /proc/version 2>/dev/null || true)
 
 # ──────────────────────────────
