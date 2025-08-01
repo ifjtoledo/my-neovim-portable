@@ -13,7 +13,7 @@ opt.expandtab = true
 
 -- Sintaxis y color
 vim.cmd("syntax on")
-opt.background = "dark"
+opt.background = "light"
 
 -- Indentación
 opt.smartindent = true
